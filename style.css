@@ -1,0 +1,59 @@
+body {
+ margin: 0;
+}
+
+#container {
+  height: 500px;
+  position: relative;
+  width: 95vw;
+  margin: 2.5vw 2.5vw 0 2.5vw;
+  overflow: hidden;
+}
+
+#content {
+  height: 2000px;
+  background-color: white;
+  width: 95vw;
+  margin: 2.5vw auto;
+}
+
+#mainbox {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+#otherbox {
+  position: absolute;
+  width: 0;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+
+#textbox {
+  display: block;
+  left:0;
+  position: absolute;
+  top:0;
+  z-index: 3;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#text {
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 120px;
+  line-height: 0px;
+  letter-spacing: -0.025em;
+  marging: 0;
+  z-index: 4;
+  transform: translateY(150px);
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+
+@media (max-width: 950px) {
+  #text {
+    font-size: 60px;
+  }
+}
