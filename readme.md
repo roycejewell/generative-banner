@@ -2,6 +2,8 @@
 
 Simple html, css, js generative banner. Can be configured with different color schemes, size, and placement parameters.
 
+![](http://i.imgur.com/60bts.gif)
+
 ## Getting Started
 
 ```
